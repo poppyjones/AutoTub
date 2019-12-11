@@ -8,7 +8,7 @@ sensor = temp_sensor
 min_temp = 25 #celcius
 
 while True:
-    if(sensor.current_temperature < min_temp):
+    if(sensor.current_temperature() < min_temp):
         print("TO COLD TRIGGER RELAY: " + str(datetime.now().strftime("%H:%M:%S")))
 
     else:
