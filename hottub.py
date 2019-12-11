@@ -13,5 +13,5 @@ while True:
 
     else:
         print("temp fine")
-    sleep(interval)
     print(str(temp_sensor.current_temperature()))
+    sleep(interval)
