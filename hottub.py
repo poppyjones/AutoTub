@@ -1,7 +1,7 @@
 from datetime import datetime
 from time import sleep
 import temp_sensor
-#import relay
+import relay
 
 interval = 10                 #interval between tests (sec)
 min_temp = 25                 #celcius
@@ -9,14 +9,14 @@ standby_temp = min_temp + 5   #celcius
 
 
 def raise_temp(goal):
-    #relay.on()
+    relay.on()
+    #TODO add timeout
     while True:
         sleep(interval) 
         curr = temp_sensor.current_temperature()
         if(curr >= goal):
             print("GOAL REACHED!")
-            #do relay stuff!
-            #relay.off()
+            relay.off()
             return
         print("TOO COLD: " + str(datetime.now().strftime("%H:%M:%S")))
         print(str(temp_sensor.current_temperature()))
