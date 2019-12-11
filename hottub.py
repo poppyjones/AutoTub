@@ -25,7 +25,7 @@ def standby_mode():
             raise_temp(standby_temp)
         else:
             print("temp fine")
-        print(str(sensor.current_temperature()))
+        print(str(temp_sensor.current_temperature()))
         sleep(interval)
 
 
