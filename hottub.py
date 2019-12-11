@@ -15,17 +15,17 @@ def raise_temp(goal):
             print("GOAL REACHED!")
             #do relay stuff!
             return
-        sleep(interval-1) 
+        sleep(interval) 
 
 
 def standby_mode():
     while True:
+        print(str(temp_sensor.current_temperature()))
         if(temp_sensor.current_temperature() < min_temp):
             print("TOO COLD TRIGGER RELAY: " + str(datetime.now().strftime("%H:%M:%S")))
             raise_temp(standby_temp)
         else:
             print("temp fine")
-        print(str(temp_sensor.current_temperature()))
         sleep(interval)
 
 
