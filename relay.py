@@ -1,6 +1,6 @@
 from RPi import GPIO
 
-relay_GPIO = 6
+relay_GPIO = 17
 state = 0
 
 GPIO.setmode(GPIO.BCM)
