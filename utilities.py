@@ -14,7 +14,7 @@ def temprange(min):
         sleep(60)
     print(t)
     
-f_path = str(Path(__file__).parent.absolute()) + "/logs/temp.log"
+f_path = str(Path(__file__).parent.absolute()) + "/logs/temp2.log"
 relay.on()
 print("Enter the number of minutes you wish to run the test: ")
 temprange(int(input()))

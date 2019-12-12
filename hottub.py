@@ -3,10 +3,10 @@ from time import sleep
 import temp_sensor
 import relay
 
-intervalOFF  = 20            #interval between tests (sec)
-intervalON   = 5             #interval between tests (sec)
-min_temp     = 5             #celcius
-standby_temp = min_temp + 2  #celcius
+intervalOFF  = 20*60    #interval between tests (sec)
+intervalON   = 5*60     #interval between tests (sec)
+min_temp     = 5        #celcius
+max_temp = min_temp + 2 #celcius
 
 
 def raise_temp(goal):
@@ -30,7 +30,7 @@ def standby_mode():
         print(str(temp_sensor.current_temperature()))
         if(temp_sensor.current_temperature() < min_temp):
             print("TOO COLD TRIGGER RELAY: " + str(datetime.now().strftime("%H:%M:%S")))
-            raise_temp(standby_temp)
+            raise_temp(max_temp)
         else:
             print("temp fine")
         sleep(intervalOFF)
