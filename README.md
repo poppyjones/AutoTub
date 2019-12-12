@@ -25,7 +25,7 @@ The default python version is set to 3.7 with:
 
 ### Test scripts
 
-To test the different hardware components ~~ and to figure out how different python libraries work ~~ I wrote a few simple test scripts that can be found in the testscripts directory. At the time of writing most of these still leave messy log files all over the place.
+To test the different hardware components ~~and to figure out how different python libraries work~~ I wrote a few simple test scripts that can be found in the testscripts directory. At the time of writing most of these still leave messy log files all over the place.
 
 ### Temperature
 

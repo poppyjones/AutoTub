@@ -1,6 +1,7 @@
-import temp_sensor
-from time import sleep
+from datetime import datetime
 from pathlib import Path
+from time import sleep
+import temp_sensor
 import relay
 
 def temprange(min):
@@ -13,9 +14,19 @@ def temprange(min):
         f.close()
         sleep(60)
     print(t)
-    
-f_path = str(Path(__file__).parent.absolute()) + "/logs/temp2.log"
-relay.on()
-print("Enter the number of minutes you wish to run the test: ")
-temprange(int(input()))
-print("your test is complete!")
+
+def runtest():
+    f_path = str(Path(__file__).parent.absolute()) + "/logs/temp.log"
+    relay.on()
+    print("Enter the number of minutes you wish to run the test: ")
+    temprange(int(input()))
+    print("your test is complete!")
+
+def writeerror(msg):
+    f_path = str(Path(__file__).parent.absolute()) + "/logs/error.log"
+    f = open(f_path, "a")
+    f.write(msg+timestring())
+    f.close()
+
+def timestring():
+    return str(datetime.now().strftime("%H:%M:%S"))
