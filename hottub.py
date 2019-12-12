@@ -3,9 +3,9 @@ from time import sleep
 import temp_sensor
 import relay
 
-interval = 10                 #interval between tests (sec)
-min_temp = 25                 #celcius
-standby_temp = min_temp + 5   #celcius
+interval = 5                  #interval between tests (sec)
+min_temp = 20                 #celcius
+standby_temp = min_temp + 20  #celcius
 
 
 def raise_temp(goal):
