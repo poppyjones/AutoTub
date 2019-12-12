@@ -18,8 +18,10 @@ Basic step by step so I don't forget how this works..
 ### Raspberry Pi setup
 
 The Raspberry Pi used for this project is the **Raspberry Pi 4 Model B** running **Raspian** from [here](<https://www.raspberrypi.org/downloads/noobs/>).
-The default python version is set to 3.7 following [this](<https://linuxconfig.org/how-to-change-from-default-to-alternative-python-version-on-debian-linux>) guide.
 
+The default python version is set to 3.7 with:
+
+    alias python='/usr/bin/python3.4'
 
 ### Test scripts
 
