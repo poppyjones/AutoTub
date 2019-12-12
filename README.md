@@ -46,4 +46,4 @@ Enter the crontab with:
 
 Add the line
 
-    @reboot /usr/lib/python3.7 /Autotub/hottub.py
+    @reboot /usr/lib/python3.7 home/pi/Autotub/hottub.py
