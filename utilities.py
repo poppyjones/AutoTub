@@ -6,6 +6,7 @@ import relay
 
 def temprange(min):
     t = [None]*min
+    f_path = str(Path(__file__).parent.absolute()) + "/logs/temp.log"
     for i in range(min):
         f = open(f_path, "a")
         t[i] = temp_sensor.current_temperature()
@@ -16,10 +17,10 @@ def temprange(min):
     print(t)
 
 def runtest():
-    f_path = str(Path(__file__).parent.absolute()) + "/logs/temp.log"
     relay.on()
     print("Enter the number of minutes you wish to run the test: ")
     temprange(int(input()))
+    relay.off()
     print("your test is complete!")
 
 def writeerror(msg):

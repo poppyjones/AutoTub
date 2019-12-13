@@ -47,3 +47,10 @@ Enter the crontab with:
 Add the line
 
     @reboot /usr/bin/python3.7 home/pi/Autotub/hottub.py
+
+## Notes
+
+- It seems to take roughly 30 mins to raise the temperature of the tub by a degree
+- The temperatures vary by roughly a degree minute to minute
+    - this may be due to the current placement of the censor and my be improved once it is placed in the heating element
+
