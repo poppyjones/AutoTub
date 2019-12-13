@@ -8,6 +8,7 @@ sensor = adafruit_max31865.MAX31865(spi, cs, wires=3)
 
 def current_temperature():
     t = sensor.temperature
-    if(t == null):
+     #if the sensor is unplugged the output is -242.020, but if it is -50 theres probable something wrong anyway..
+    if(t < -50):
         raise Exception("Sensor input error! Check wiring and reboot")
     return t
