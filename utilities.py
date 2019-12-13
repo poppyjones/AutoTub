@@ -25,7 +25,7 @@ def runtest():
 def writeerror(msg):
     f_path = str(Path(__file__).parent.absolute()) + "/logs/error.log"
     f = open(f_path, "a")
-    f.write(msg+timestring())
+    f.write(timestring() + " " + msg)
     f.close()
 
 def timestring():
