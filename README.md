@@ -33,7 +33,8 @@ To set up the temperature sensor and whatnot follow [these](<https://learn.adafr
 
 ### Relay board
 
-The installation guide for the relay board an by found in [this](<https://github.com/modmypi/PiOT-Relay-Board/wiki>) wiki. The example code is a bit much tbh, although i guess it may be useful if you are using more than one relay. Currently the code assumes that the relay is connected to **GPIO 17** (pin 11). 
+The installation guide for the relay board an by found in [this](<https://github.com/modmypi/PiOT-Relay-Board/wiki>) wiki. The example code is a bit much tbh, although i guess it may be useful if you are using more than one relay. Currently the code assumes that the relay is connected to **GPIO 17** (pin 11).
+
 Note: it seems like different relays have different defaults. When connected to **GPIO 6** the the relay stayed on even after the Pi powered down, when connected to 17 this is not an issue.
 
 ### CRONTAB scheduling
