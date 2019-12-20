@@ -8,8 +8,8 @@ import sys
 
 intervalOFF  = 20*60    #interval between tests (sec)
 intervalON   = 5*60     #interval between tests (sec)
-min_temp     = 5        #celcius
-max_temp = min_temp + 2 #celcius
+min_temp     = 3        #celcius
+max_temp = min_temp + 1 #celcius
 
 
 def raise_temp(goal):

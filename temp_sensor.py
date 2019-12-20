@@ -10,5 +10,5 @@ def current_temperature():
     t = sensor.temperature
      #if the sensor is unplugged the output is -242.020, but if it is -50 theres probable something wrong anyway..
     if(t < -50):
-        raise Exception("Sensor input error! Check wiring and reboot")
+        raise Exception(str(t)+"C: Sensor input error! Check wiring and reboot")
     return t
