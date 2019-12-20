@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name = "What is the temperature?"
+Exec = /usr/lib/python3.7 /home/pi/Autotub/testscripts/hellotemp.py
+Icon= /home/pi/Autotub/desktopicons/speed-24px.svg
+Terminal = true
