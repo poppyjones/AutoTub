@@ -11,7 +11,7 @@ GPIO.setup(relay_GPIO,GPIO.OUT, initial=state)
 try:      
     while True:
         state = 0 if state == 1 else 1
-        #print("on" if state == 1 else "false")
+        #print("on" if state == 1 else "OFF")
         GPIO.output(relay_GPIO,state)
         sleep(5)
 
