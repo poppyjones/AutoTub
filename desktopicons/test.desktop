@@ -5,5 +5,3 @@ Name="test icon"
 Exec=python /home/pi/AutoTub/testscripts/icontest.py
 Icon=/home/pi/AutoTub/desktopicons/cancel-24px.svg
 Terminal=true
-X-KeepTerminal=true
-Name[en_GB]=test
