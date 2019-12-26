@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name= Set to standby
+Exec=python /home/pi/AutoTub/hottub.py
+Icon=/home/pi/AutoTub/desktopicons/timer-24px.svg
+Terminal=true
