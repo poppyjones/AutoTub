@@ -1,6 +1,6 @@
 from datetime import datetime
 
-print("Good job! Your icons work now: ")
+print("Great! It looks like the icons are working: ")
 print(str(datetime.now().strftime("%d %b %Y %H:%M:%S")) + "\n")
-# the terminal will remain open whilethe script is running
+# the terminal will remain open while the script is running
 input() # the script stops once it receives input 

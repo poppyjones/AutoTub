@@ -3,6 +3,6 @@ Type=Application
 Encoding=UTF-8
 Name= Set temperature
 Exec=python /home/pi/AutoTub/raisetemp.py
-Icon=/home/pi/AutoTub/desktopicons/hot_tub-24px.svg
+Icon=/home/pi/AutoTub/desktopicons/icons/hot_tub-24px.svg
 Terminal=true
 X-KeepTerminal=true
