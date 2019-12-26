@@ -2,7 +2,7 @@
 Type=Application
 Encoding=UTF-8
 Name="What is the temperature?"
-Exec=python /home/pi/AutoTub/testscripts/hellotime.py
+Exec=python /home/pi/AutoTub/testscripts/hellotemp.py
 Icon=/home/pi/AutoTub/desktopicons/speed-24px.svg
 Terminal=true
 X-KeepTerminal=true

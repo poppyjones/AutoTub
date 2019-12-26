@@ -21,7 +21,7 @@ The Raspberry Pi used for this project is the **Raspberry Pi 4 Model B** running
 
 The default python version is set to 3.7 with:
 
-    alias python='/usr/bin/python3.4'
+    alias python='/usr/bin/python3.7'
 
 ### Test scripts
 
@@ -41,7 +41,7 @@ Note: it seems like different relays have different defaults. When connected to 
 
 So ensure the hottub.py script runs even if there is a short power cut I used the crontab to run the script on reboot.
 
-Enter the crontab with:
+Enter the crontab by typing:
 
     crontab -e
 
@@ -49,9 +49,28 @@ Add the line
 
     @reboot /usr/bin/python3.7 home/pi/Autotub/hottub.py
 
-## Notes
+## Notes & WIP
 
 - It seems to take roughly 30 mins to raise the temperature of the tub by a degree
 - The temperatures vary by roughly a degree minute to minute
-    - this may be due to the current placement of the censor and my be improved once it is placed in the heating element
+  - this may be due to the current placement of the censor and my be improved once it is placed in the heating element
 
+### Desktop icons
+
+Desktop icons can be added to the Raspberry Pi to make AutoTub a bit more user friendly for normal people.
+The icons are [Material Design Icons](https://material.io/resources/icons/?style=baseline).
+
+#### How to  add desktop icons
+
+- Open the desktopicons folder in AutoTub  
+- Move all .desktop files to the desktop.
+- Press `ctr+alt+t` and copy-paste the text from setup.txt into the terminal window
+- To remove pop up when clicking icon
+  - File manager
+  - Edit
+  - Preferences
+  - General
+  - Tick *Do not ask option on executable launch*
+- Click the icon marked test. An window should open with a success message
+  - if this does not happen, call me
+- Finally you can delete the test icon
