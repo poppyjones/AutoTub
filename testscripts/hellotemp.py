@@ -10,9 +10,9 @@ sensor = adafruit_max31865.MAX31865(spi, cs, wires=3)
 #f = open("tempLog.txt", "a")
 #f.write("Hello! This script was called: ")
 #f.write(str(datetime.now().strftime("%d %b %Y %H:%M:%S")) + "\n")
-#f.write("   The temprature was: {0:0.3f}C\n".format(sensor.temperature))
+#f.write("   The temperature was: {0:0.3f}C\n".format(sensor.temperature))
 #f.close()
 
-print("   The temprature is: {0:0.3f}C\n".format(sensor.temperature))
+print("   The temperature is: {0:0.3f}C\n".format(sensor.temperature))
 
 input()

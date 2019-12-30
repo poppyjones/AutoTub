@@ -49,12 +49,6 @@ Add the line
 
     @reboot /usr/bin/python3.7 home/pi/Autotub/hottub.py
 
-## Notes & WIP
-
-- It seems to take roughly 30 mins to raise the temperature of the tub by a degree
-- The temperatures vary by roughly a degree minute to minute
-  - this may be due to the current placement of the censor and my be improved once it is placed in the heating element
-
 ### Desktop icons
 
 Desktop icons can be added to the Raspberry Pi to make AutoTub a bit more user friendly for normal people.
@@ -74,3 +68,10 @@ The icons are [Material Design Icons](https://material.io/resources/icons/?style
 - Click the icon marked test. An window should open with a success message
   - if this does not happen, call me
 - Finally you can delete the test icon
+
+## Notes & WIP
+
+- It seems to take roughly 30 mins to raise the temperature of the tub by a degree
+- The temperatures vary by roughly a degree minute to minute
+  - this may be due to the current placement of the censor and my be improved once it is placed in the heating element
+- Consider remote interface.
