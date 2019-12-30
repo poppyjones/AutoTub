@@ -3,5 +3,5 @@ Type = Application
 Encoding = UTF-8
 Name = Stop
 Exec = pkill -f hottub.py
-Icon = /home/pi/AutoTub/desktopicons/cancel-24px.svg
+Icon = /home/pi/AutoTub/desktopicons/icons/cancel-24px.svg
 Terminal = true
