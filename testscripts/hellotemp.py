@@ -15,4 +15,5 @@ sensor = adafruit_max31865.MAX31865(spi, cs, wires=3)
 
 print("   The temperature is: {0:0.3f}C\n".format(sensor.temperature))
 
+
 input()
