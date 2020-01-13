@@ -6,10 +6,10 @@ import relay
 import sys
 
 
-intervalOFF  = 20*60    #interval between tests (sec)
-intervalON   = 5*60     #interval between tests (sec)
-min_temp     = 3        #celcius
-max_temp = min_temp + 1 #celcius
+intervalOFF  = 20*60          #interval between tests (sec)
+intervalON   = 5*60           #interval between tests (sec)
+standby_min  = 3              #celcius
+standby_max = standby_min + 1 #celcius
 
 
 def raise_temp(goal):
@@ -30,7 +30,7 @@ def raise_temp(goal):
         writeerror(err+timestring())
         sys.exit()
 
-def standby_mode():
+def maintain_temp(min_temp, max_temp):
     try:
         while True:
             print(str(temp_sensor.current_temperature()))
@@ -49,4 +49,4 @@ def standby_mode():
 
 
 if __name__ == "__main__":
-    standby_mode()
+    standby_mode(standby_min,standby_max)

@@ -8,7 +8,7 @@ sensor = sensor = W1ThermSensor()
 #f.write("   The temperature was: {0:0.3f}C\n".format(sensor.temperature))
 #f.close()
 
-print("   The temperature is: {0:0.3f}C\n".format(sensor.get_temperature()))
+print("The temperature is: {0:0.3f}C".format(sensor.get_temperature()))
 
 
 input()
