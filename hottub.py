@@ -49,4 +49,4 @@ def maintain_temp(min_temp, max_temp):
 
 
 if __name__ == "__main__":
-    standby_mode(standby_min,standby_max)
+    maintain_temp(standby_min,standby_max)
