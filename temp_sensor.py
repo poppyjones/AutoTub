@@ -1,13 +1,8 @@
-import board
-import busio
-import digitalio
-import adafruit_max31865
-spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO)
-cs = digitalio.DigitalInOut(board.D5)  # Chip select of the MAX31865 board.
-sensor = adafruit_max31865.MAX31865(spi, cs, wires=3)
+from w1thermsensor import W1ThermSensor
+sensor = sensor = W1ThermSensor()
 
 def current_temperature():
-    t = sensor.temperature
+    t = sensor.get_temperature()
      #if the sensor is unplugged the output is -242.020, but if it is -50 theres probable something wrong anyway..
     if(t < -50):
         raise Exception(str(t)+"C: Sensor input error! Check wiring and reboot")
