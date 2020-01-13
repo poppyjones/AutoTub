@@ -1,4 +1,4 @@
 chmod +x /home/pi/AutoTub/raisetemp.py
 chmod +x /home/pi/AutoTub/hottub.py
 chmod +x /home/pi/AutoTub/testscripts/hellotemp.py
-
+chmod +x /home/pi/AutoTub/testscripts/icontest.py
