@@ -2,6 +2,6 @@
 Type = Application
 Encoding = UTF-8
 Name = Stop
-Exec = pkill -f hottub.py
+Exec = sh -c "pkill -f hottub.py & pkill -f raisetemp.py"  
 Icon = /home/pi/AutoTub/desktopicons/icons/cancel-24px.svg
 Terminal = true

@@ -3,6 +3,7 @@ from RPi import GPIO
 relay_GPIO = 17
 state = 0
 
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(relay_GPIO,GPIO.OUT, initial=state)
 

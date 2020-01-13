@@ -6,8 +6,8 @@ import relay
 import sys
 
 
-intervalOFF  = 20*60          #interval between tests (sec)
-intervalON   = 5*60           #interval between tests (sec)
+intervalOFF  = 1*60           #interval between tests (sec)
+intervalON   = 1*60           #interval between tests (sec)
 standby_min  = 3              #celcius
 standby_max = standby_min + 1 #celcius
 
