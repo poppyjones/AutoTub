@@ -10,8 +10,7 @@ Basic step by step so I don't forget how this works..
 
 - Raspberry Pi 4 Model B
 - Temperature sensor thingy
-  - Three wire temperature sensor? (water proof)
-  - Amplifier was [MAX31856](<https://www.adafruit.com/product/3263>)
+  - Three wire temperature sensor: DS18B20
 - Relay
   - [ModMyPi PiOT Relay Board](<https://thepihut.com/products/modmypi-piot-relay-board>)
 
@@ -29,7 +28,7 @@ To test the different hardware components ~~and to figure out how different pyth
 
 ### Temperature
 
-To set up the temperature sensor and whatnot follow [these](<https://learn.adafruit.com/adafruit-max31856-thermocouple-amplifier>) instructions, skipping the section "Wiring and testing". Remember to enable **SPI** on the Pi, skip the example code and use hellotemp.py to check that is is working. We followed their example and used **GPIO 5**, so do remember to modify code if this changes.
+To set up the temperature sensor and whatnot follow [these](<https://bigl.es/ds18b20-temperature-sensor-with-python-raspberry-pi/>) instructions. 
 
 ### Relay board
 
@@ -74,4 +73,5 @@ The icons are [Material Design Icons](https://material.io/resources/icons/?style
 - It seems to take roughly 30 mins to raise the temperature of the tub by a degree
 - The temperatures vary by roughly a degree minute to minute
   - this may be due to the current placement of the censor and my be improved once it is placed in the heating element
+  - **test this with the new sensor**
 - Consider remote interface.
